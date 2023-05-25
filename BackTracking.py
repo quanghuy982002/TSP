@@ -20,10 +20,10 @@ def tsp(graph):
                 visited[next_vertex] = False
                 path.pop()
 
-    visited[start_vertex] = True
-    path.append(start_vertex)
+    visited[0] = True  # Xuất phát từ đỉnh 0
+    path.append(0)  # Thêm đỉnh 0 vào đường đi
     print("Backtrack:", path)
-    backtrack(start_vertex, 0, 1)
+    backtrack(0, 0, 1)  # Gọi hàm backtrack với đỉnh 0 là đỉnh xuất phát, cost ban đầu là 0, và count ban đầu là 1
 
     return min_cost
 
@@ -34,8 +34,6 @@ graph = [
     [15, 35, 0, 30],
     [20, 25, 30, 0]
 ]
-
-start_vertex = 2 # [0, n -1]
 
 min_cost = tsp(graph)
 print("Minimum cost:", min_cost)

@@ -34,3 +34,4 @@ graph = [
 
 s = 0
 print("Minimum cost:", tsp(graph, s))
+

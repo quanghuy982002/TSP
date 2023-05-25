@@ -7,9 +7,9 @@ greedy = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
 bruteForce = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0055294036865234375, 0.03797030448913574, 0.3848307132720947, 4.23048210144043, 50.50507187843323, 660.2890708446503]
 
 plt.plot(num_cities, dynamic_Programing, label='Dynamic Programming')
-# plt.plot(num_cities, back_Tracking, label='Backtracking')
+plt.plot(num_cities, back_Tracking, label='Backtracking')
 plt.plot(num_cities, greedy, label='Greedy')
-# plt.plot(num_cities, bruteForce, label='Brute Force')
+plt.plot(num_cities, bruteForce, label='Brute Force')
 
 plt.xlabel('Số lượng các thành phố')
 plt.ylabel('Thời gian (giây)')
